@@ -1,0 +1,91 @@
+.card {
+
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+    height: 40rem;
+
+    &__side {
+        height: 40rem;
+        transition: all .8s ease;
+        font-size: 1.6rem;
+        width: 100%;
+        position: absolute;
+        backface-visibility: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($black, .15);
+        background-color: $white;
+        border-radius: 2.5rem;
+
+        &--back {
+            //background-image: linear-gradient(to right bottom, rgba($secondary-color, .7), rgba($secondary-color-lt, .7));
+
+            transform: rotateY(180deg);
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(-180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+
+    //FRONT SIDE STYLING
+    &__picture {
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 25rem;
+        -webkit-clip-path: polygon(0 90%, 0 0, 100% 0, 100% 90%, 75% 90%, 50% 100%, 25% 90%);
+        clip-path: polygon(0 90%, 0 0, 100% 0, 100% 90%, 75% 90%, 50% 100%, 25% 90%);
+
+        border-radius: 2.5rem;
+
+        &--1 {
+            background-image: linear-gradient(to right bottom, rgba($main-color, .4), rgba($main-color-lt, .4)), url(../../img/projects/250-cosmoprof.png);
+        }
+
+        &--2 {
+            background-image: linear-gradient(to right bottom, rgba($main-color, .4), rgba($main-color-lt, .4)), url(../../img/projects/250-sallybeauty.png);
+        }
+
+        &--3 {
+            background-image: linear-gradient(to right bottom, rgba($main-color, .4), rgba($main-color-lt, .4)), url(../../img/projects/250-intermix.png);
+        }
+
+        &--4 {
+            background-image: linear-gradient(to right bottom, rgba($main-color, .4), rgba($main-color-lt, .4)), url(../../img/projects/250-gap.png);
+        }
+
+        &--5 {
+            background-image: linear-gradient(to right bottom, rgba($main-color, .4), rgba($main-color-lt, .4)), url(../../img/projects/250-dvf.png);
+        }
+
+        &--6 {
+            background-image: linear-gradient(to right bottom, rgba($main-color, .4), rgba($main-color-lt, .4)), url(../../img/projects/250-sherwin.png);
+        }
+    }
+
+    &__details {
+        font-size: 1.6rem;
+        color: $black;
+        text-align: center;
+        padding-top: 3rem;
+    }
+
+    //BACK SIDE STYLING
+    &__project-details {
+        position: relative;
+        height: 100%;
+
+        p {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 1.2rem;
+            padding: 1.5rem;
+        }
+    }
+}

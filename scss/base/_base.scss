@@ -1,0 +1,21 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+@media screen and (max-width: $break-large-device) {
+    html {
+        font-size: 6px;
+    }
+}
+
+body {
+    padding: 3rem;
+}

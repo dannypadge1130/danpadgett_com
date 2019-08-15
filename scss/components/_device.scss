@@ -1,0 +1,17 @@
+.hide-sm {
+    @media only screen and (max-width: $break-small-device) {
+        display: none;
+    }
+}
+
+.hide-md {
+    @media only screen and (min-width: $break-small-device) and (max-width: $break-large-device) {
+        display: none;
+    }
+}
+
+.hide-lg {
+    @media only screen and (min-width: $break-large-device) {
+        display: none;
+    }
+}

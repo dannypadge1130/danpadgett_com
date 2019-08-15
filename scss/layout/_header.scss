@@ -1,0 +1,48 @@
+.header {
+    height: 75vh;
+
+    @media screen and (max-width: $break-large-device) {
+        height: 50vh;
+    }
+
+    background-image: linear-gradient(to right bottom, rgba($main-color, 0.7), rgba($main-color-lt, 0.7)),
+    url('../img/hero.jpg');
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+    -webkit-clip-path: polygon(0 90%, 0 0, 100% 0, 100% 90%, 75% 90%, 50% 100%, 25% 90%);
+    clip-path: polygon(0 90%, 0 0, 100% 0, 100% 90%, 75% 90%, 50% 100%, 25% 90%);
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+
+    &__logo {
+        height: 5rem;
+        @extend %button-shadow;
+    }
+
+    &__social-links {
+        position: absolute;
+        top: 4rem;
+        right: 0vh;
+        min-width: 16rem;
+    }
+
+    &__social--img {
+        height: 5rem;
+        margin-left: 1rem;
+        @extend %button-shadow;
+    }
+
+    &__text-box {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}

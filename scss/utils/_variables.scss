@@ -1,0 +1,23 @@
+/* Site Fonts */
+$site-font: 'Lato',
+sans-serif;
+
+/* Site Colors */
+$main-color: #07889B;
+$main-color-lt: #66B9BF;
+$secondary-color: #E37222;
+$secondary-color-lt: #EEAA7B;
+$black: #000000;
+$white: #ffffff;
+
+/* Site Breakpoints */
+$break-xlarge-device: 1200px;
+$break-large-device: 992px;
+$break-medium-device: 768px;
+$break-small-device: 480px;
+$break-xsmall-device: 320px;
+
+/* Grid Sizes */
+$grid-width: 90rem;
+$gutter-horizontal: 2rem;
+$gutter-vertical: 6rem;
