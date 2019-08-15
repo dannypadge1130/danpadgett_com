@@ -76,16 +76,29 @@ body {
     letter-spacing: 1rem;
     animation: moveInRight 1s ease-out; }
 
-.about-text {
-  font-size: 1.6rem; }
-  .about-text--highlight {
-    color: white;
-    font-size: 2.4rem;
-    padding-right: .4rem;
-    letter-spacing: .15rem; }
+.about-primary--main {
+  font-size: 3.5rem;
+  letter-spacing: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 2rem; }
 
-.skill {
+.about-profile--highlight {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  margin-right: 4px; }
+
+.about-profile--text {
   font-size: 1.6rem;
+  letter-spacing: .1rem; }
+
+.portfolio-primary--main {
+  font-size: 3.5rem;
+  letter-spacing: 1.2rem;
+  font-weight: 400;
+  text-transform: uppercase;
   color: #ffffff; }
 
 /* Components */
@@ -152,7 +165,8 @@ body {
     backface-visibility: hidden;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
     background-color: #ffffff;
-    border-radius: 2.5rem; }
+    border-radius: 2.5rem;
+    border: 0.1rem solid #000000; }
     .card__side--back {
       transform: rotateY(180deg); }
   .card:hover .card__side--front {
@@ -184,6 +198,9 @@ body {
     color: #000000;
     text-align: center;
     padding-top: 3rem; }
+    .card__details p {
+      text-transform: uppercase;
+      letter-spacing: .2rem; }
   .card__project-details {
     position: relative;
     height: 100%; }
@@ -196,7 +213,7 @@ body {
 
 /* Layout */
 .header {
-  height: 75vh;
+  height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(7, 136, 155, 0.7), rgba(102, 185, 191, 0.7)), url("../img/hero.jpg");
   background-size: cover;
   background-position: top;
@@ -205,7 +222,7 @@ body {
   clip-path: polygon(0 90%, 0 0, 100% 0, 100% 90%, 75% 90%, 50% 100%, 25% 90%); }
   @media screen and (max-width: 992px) {
     .header {
-      height: 50vh; } }
+      height: 75vh; } }
   .header__logo-box {
     position: absolute;
     top: 4rem;
@@ -255,14 +272,15 @@ body {
 
 /* Pages */
 .about {
-  background-color: #ffffff;
+  background-color: #F5F5F5;
   margin-top: -10vh;
-  padding-top: 20rem;
+  padding-top: 15rem;
   padding-bottom: 30rem; }
   .about__profile-box {
     background-color: #66B9BF;
     padding: 2.5rem;
-    border-radius: 2.5rem; }
+    border-radius: 2.5rem;
+    border: 0.1rem solid #000000; }
     .about__profile-box--img {
       float: right;
       border-radius: 18rem; }
@@ -270,14 +288,16 @@ body {
     .about__skills {
       margin-left: 1rem; } }
   .about__skills .skill {
-    margin-top: 1rem;
     background-color: #66B9BF;
     padding: .5rem 1.5rem .5rem 1.5rem;
     border-radius: 2.5rem;
     margin-right: .5rem;
     display: inline-block;
     cursor: default;
-    color: #000000; }
+    font-size: 1.6rem;
+    color: #ffffff; }
+    .about__skills .skill:not(:first-child) {
+      margin-top: 1rem; }
 
 .portfolio {
   margin-top: -20vh;

@@ -16,9 +16,9 @@
         background-color: $white;
         border-radius: 2.5rem;
 
-        &--back {
-            //background-image: linear-gradient(to right bottom, rgba($secondary-color, .7), rgba($secondary-color-lt, .7));
+        border: .1rem solid $black;
 
+        &--back {
             transform: rotateY(180deg);
         }
     }
@@ -73,6 +73,11 @@
         color: $black;
         text-align: center;
         padding-top: 3rem;
+
+        p {
+            text-transform: uppercase;
+            letter-spacing: .2rem;
+        }
     }
 
     //BACK SIDE STYLING
