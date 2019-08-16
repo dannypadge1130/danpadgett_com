@@ -8,7 +8,7 @@
     &__side {
         height: 40rem;
         transition: all .8s ease;
-        font-size: 1.6rem;
+        font-size: $default-font-size;
         width: 100%;
         position: absolute;
         backface-visibility: hidden;
@@ -16,7 +16,7 @@
         background-color: $white;
         border-radius: 2.5rem;
 
-        border: .1rem solid $black;
+
 
         &--back {
             transform: rotateY(180deg);
@@ -41,7 +41,7 @@
         -webkit-clip-path: polygon(0 90%, 0 0, 100% 0, 100% 90%, 75% 90%, 50% 100%, 25% 90%);
         clip-path: polygon(0 90%, 0 0, 100% 0, 100% 90%, 75% 90%, 50% 100%, 25% 90%);
 
-        border-radius: 2.5rem;
+        border-radius: 2.4rem;
 
         &--1 {
             background-image: linear-gradient(to right bottom, rgba($main-color, .4), rgba($main-color-lt, .4)), url(../../img/projects/250-cosmoprof.png);
@@ -69,7 +69,7 @@
     }
 
     &__details {
-        font-size: 1.6rem;
+        font-size: $default-font-size;
         color: $black;
         text-align: center;
         padding-top: 3rem;

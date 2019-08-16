@@ -1,0 +1,23 @@
+.seperator-grey-arrow {
+    background-color: $grey-lt;
+
+    &--fill {
+        height: 10.2vh;
+        width: 50%;
+        margin: 0 auto;
+        -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+    }
+}
+
+.seperator-blue-arrow {
+    background-color: $main-color;
+
+    &--fill {
+        height: 10.2vh;
+        width: 50%;
+        margin: 0 auto;
+        -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+        clip-path: polygon(50% 100%, 0 0, 100% 0);
+    }
+}
